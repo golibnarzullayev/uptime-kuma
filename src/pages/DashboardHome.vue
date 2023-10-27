@@ -8,23 +8,23 @@
             <div class="shadow-box big-padding text-center mb-4">
                 <div class="row">
                     <div class="col">
-                        <h3>{{ $t("Up") }}</h3>
+                        <h6 class="fs-6">{{ $t("Up") }}</h6>
                         <span class="num">{{ $root.stats.up }}</span>
                     </div>
                     <div class="col">
-                        <h3>{{ $t("Down") }}</h3>
+                        <h6 class="fs-6">{{ $t("Down") }}</h6>
                         <span class="num text-danger">{{ $root.stats.down }}</span>
                     </div>
                     <div class="col">
-                        <h3>{{ $t("Maintenance") }}</h3>
+                        <h6 class="fs-6">{{ $t("Maintenance") }}</h6>
                         <span class="num text-maintenance">{{ $root.stats.maintenance }}</span>
                     </div>
                     <div class="col">
-                        <h3>{{ $t("Unknown") }}</h3>
+                        <h6 class="fs-6">{{ $t("Unknown") }}</h6>
                         <span class="num text-secondary">{{ $root.stats.unknown }}</span>
                     </div>
                     <div class="col">
-                        <h3>{{ $t("pauseDashboardHome") }}</h3>
+                        <h6 class="fs-6">{{ $t("pauseDashboardHome") }}</h6>
                         <span class="num text-secondary">{{ $root.stats.pause }}</span>
                     </div>
                 </div>
