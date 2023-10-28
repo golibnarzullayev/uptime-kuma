@@ -43,7 +43,7 @@ const languageList = {
     "ro": "Limba română",
     "ur": "Urdu",
     "ge": "ქართული",
-    "uz-UZ": "O'zbekcha"
+    "uz-UZ": "O'zbek"
 };
 
 let messages = {
