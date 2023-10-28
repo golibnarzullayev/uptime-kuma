@@ -46,19 +46,19 @@
 
             <div class="functions">
                 <div class="btn-group" role="group">
-                    <button v-if="monitor.active" class="btn btn-normal" @click="pauseDialog">
+                    <button v-if="monitor.active" class="btn btn-normal btn-font__size" @click="pauseDialog">
                         <font-awesome-icon icon="pause" /> {{ $t("Pause") }}
                     </button>
-                    <button v-if="! monitor.active" class="btn btn-primary" :disabled="monitor.forceInactive" @click="resumeMonitor">
+                    <button v-if="! monitor.active" class="btn btn-primary btn-font__size" :disabled="monitor.forceInactive" @click="resumeMonitor">
                         <font-awesome-icon icon="play" /> {{ $t("Resume") }}
                     </button>
-                    <router-link :to=" '/edit/' + monitor.id " class="btn btn-normal">
+                    <router-link :to=" '/edit/' + monitor.id " class="btn btn-normal btn-font__size">
                         <font-awesome-icon icon="edit" /> {{ $t("Edit") }}
                     </router-link>
-                    <router-link :to=" '/clone/' + monitor.id " class="btn btn-normal">
+                    <router-link :to=" '/clone/' + monitor.id " class="btn btn-normal btn-font__size">
                         <font-awesome-icon icon="clone" /> {{ $t("Clone") }}
                     </router-link>
-                    <button class="btn btn-danger" @click="deleteDialog">
+                    <button class="btn btn-danger btn-font__size" @click="deleteDialog">
                         <font-awesome-icon icon="trash" /> {{ $t("Delete") }}
                     </button>
                 </div>
@@ -648,6 +648,10 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/vars.scss";
 
+.btn-font__size {
+   font-size: 14px;
+}
+
 @media (max-width: 767px) {
     .badge {
         margin-top: 14px;
@@ -665,6 +669,10 @@ export default {
 
     .dropdown-clear-data {
         margin-bottom: 10px;
+    }
+
+    .btn-font__size {
+      font-size: 12px;
     }
 }
 
